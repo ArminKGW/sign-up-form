@@ -1,0 +1,177 @@
+@font-face{
+    font-family: "logo-font";
+    src: url(fonts/quikhand.tff);
+}
+
+:root{
+    --sea-color: #488ca0;
+}
+
+body{
+    font-family: "Roboto", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+
+.picture{
+    background-image: url("img/sea.jpg");
+    background-size: cover;
+    height: 100vh;
+    max-width: 35%;
+    position: relative;
+    flex: 1;
+}
+
+div.logo-background{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(33, 30, 30);
+    opacity: 0.5;
+    position: absolute;
+    top: 200px;
+}
+
+div.image-container{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 200px;
+}
+
+img[src="img/logo.png"]{
+    height: 90%;
+    width: auto;
+}
+
+img+span{
+    font-family: "logo-font", serif;
+    font-size: 8rem;
+    color: white;
+}
+
+section{
+    background-color: rgb(244, 240, 240);
+    flex: 1;
+}
+
+div.top{
+    margin-top: 60px;
+}
+
+div.top > p{
+    font-size: 24px;
+    font-weight: 700;
+    width: 730px;
+    margin-left: 36px;
+}
+
+fieldset{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgb(205, 205, 205);
+    border-left: 0;
+    border-right: 0; 
+    margin-top: 70px;
+    box-shadow: 0px 2px 4px 0px #BCBCBC;
+}
+
+div.form-header{
+    display: flex;
+    align-items: center;
+    margin-left: 36px;
+}
+
+h2+span{
+    font-weight: 600;
+    color: red;
+    margin-left: 20px;
+}
+
+div.form-content{
+    margin-left: 36px;
+    display: flex;
+    gap: 130px;
+}
+
+div.left-form,
+div.right-form{
+    width: 240px;
+}
+
+button,
+input{
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+label{
+    display: block;
+    color: rgb(64, 63, 63);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+}
+
+input{
+    margin-bottom: 20px;
+    height: 28px;
+    width: 100%;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+}
+
+input:hover{
+    background-color: #f5f4f4;
+}
+
+input:focus{
+    border-color: blue;
+    box-shadow: 0px 2px 4px 0px #BCBCBC;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+div.create-login{
+    margin-left: 36px;
+}
+
+button{
+    padding: 12px 24px;
+    border: 0;
+    color: white;
+    background-color: var(--sea-color);
+    font-size: 16px;
+    font-weight: 700;
+    margin: 48px 0 36px;
+    width: 200px;
+    height: 44px;
+    border-radius: 6px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #1e6a82;
+}
+
+button:active{
+    background-color: #5596aa;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--sea-color);
+}
+
+
+
