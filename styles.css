@@ -126,6 +126,7 @@ input{
     width: 100%;
     border: 1px solid #E5E7EB;
     border-radius: 4px;
+    outline: none;
 }
 
 input:hover{
@@ -137,7 +138,7 @@ input:focus{
     box-shadow: 0px 2px 4px 0px #BCBCBC;
 }
 
-input:invalid{
+input:not(:focus):invalid{
     border-color: red;
 }
 
